@@ -1,0 +1,94 @@
+.menu {
+    background-color: rgb(32, 161, 187);
+    width: 100%;
+    height: 70px;
+    float: top;
+    overflow: hidden;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.search {
+    width: 100%;
+    height: 20px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tex_box_s {
+
+    height: 30px;
+    width: 30%;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, rgb(32, 161, 187), #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+
+}
+
+button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+#notes-table {
+
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#notes-table td,
+#notes-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#notes-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#notes-table tr:hover {
+    background-color: #ddd;
+}
+
+#notes-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(32, 161, 187);
+    color: white;
+}
